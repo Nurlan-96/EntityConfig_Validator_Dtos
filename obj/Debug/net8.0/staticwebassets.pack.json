@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\wwwroot\\images\\phone.jpg",
+      "PackagePath": "staticwebassets\\images\\phone.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ShopAppAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ShopAppAPI.props",
+      "PackagePath": "build\\ShopAppAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ShopAppAPI.props",
+      "PackagePath": "buildMultiTargeting\\ShopAppAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ShopAppAPI.props",
+      "PackagePath": "buildTransitive\\ShopAppAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
