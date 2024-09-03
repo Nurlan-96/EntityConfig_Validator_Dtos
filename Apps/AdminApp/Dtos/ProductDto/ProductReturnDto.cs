@@ -8,6 +8,11 @@
         public double CostPrice { get; set; }
         public DateOnly CreatedDate { get; set; }
         public DateOnly UpdatedDate { get; set; }
-        public string CategoryName {  get; set; }
+        public CategoryInProductReturnDto Category {  get; set; }
+    }
+    public class CategoryInProductReturnDto
+    {
+        public string Name { get; set; }
+        public int ProductsCount { get; set; }
     }
 }

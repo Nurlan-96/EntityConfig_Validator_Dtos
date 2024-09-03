@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gM6jL46m5dgY1dEagZmMrIZ/LnBaTQCAGU/qPHYvrgw=",
+  "Hash": "HBGD+ticpSvUtEvnHZkQtW7apOAAvLewPfKMzctGjqw=",
   "Source": "ShopAppAPI",
   "BasePath": "_content/ShopAppAPI",
   "Mode": "Default",
@@ -16,6 +16,44 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\wwwroot\\images\\1b26102c-9b95-4b7d-a23b-685f54d59760.webp",
+      "SourceId": "ShopAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\wwwroot\\",
+      "BasePath": "_content/ShopAppAPI",
+      "RelativePath": "images/1b26102c-9b95-4b7d-a23b-685f54d59760.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\1b26102c-9b95-4b7d-a23b-685f54d59760.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\wwwroot\\images\\gym.webp",
+      "SourceId": "ShopAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\wwwroot\\",
+      "BasePath": "_content/ShopAppAPI",
+      "RelativePath": "images/gym.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\gym.webp"
+    },
     {
       "Identity": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\wwwroot\\images\\phone.jpg",
       "SourceId": "ShopAppAPI",

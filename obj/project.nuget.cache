@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "UWUfK2pqUdg=",
+  "dgSpecHash": "77ytMrJypJM=",
   "success": true,
   "projectFilePath": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\ShopAppAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Uncle Nurlan\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Uncle Nurlan\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Uncle Nurlan\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\Uncle Nurlan\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",

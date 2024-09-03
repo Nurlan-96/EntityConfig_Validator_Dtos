@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|c:\\users\\uncle nurlan\\desktop\\shopappapi\\apps\\adminapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|solutionrelative:apps\\adminapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|c:\\users\\uncle nurlan\\desktop\\shopappapi\\apps\\adminapp\\dtos\\productdto\\productitemlistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|solutionrelative:apps\\adminapp\\dtos\\productdto\\productitemlistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|c:\\users\\uncle nurlan\\desktop\\shopappapi\\apps\\adminapp\\dtos\\productdto\\productreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|solutionrelative:apps\\adminapp\\dtos\\productdto\\productreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|c:\\users\\uncle nurlan\\desktop\\shopappapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|c:\\users\\uncle nurlan\\desktop\\shopappapi\\profiles\\mapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|solutionrelative:profiles\\mapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|c:\\users\\uncle nurlan\\desktop\\shopappapi\\apps\\adminapp\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|solutionrelative:apps\\adminapp\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|c:\\users\\uncle nurlan\\desktop\\shopappapi\\apps\\adminapp\\dtos\\categorydto\\categoryreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|solutionrelative:apps\\adminapp\\dtos\\categorydto\\categoryreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|c:\\users\\uncle nurlan\\desktop\\shopappapi\\apps\\adminapp\\dtos\\categorydto\\categorycreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|solutionrelative:apps\\adminapp\\dtos\\categorydto\\categorycreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,47 +41,99 @@
           "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CategoryCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Apps\\AdminApp\\Dtos\\CategoryDto\\CategoryCreateDto.cs",
-              "RelativeDocumentMoniker": "Apps\\AdminApp\\Dtos\\CategoryDto\\CategoryCreateDto.cs",
-              "ToolTip": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Apps\\AdminApp\\Dtos\\CategoryDto\\CategoryCreateDto.cs",
-              "RelativeToolTip": "Apps\\AdminApp\\Dtos\\CategoryDto\\CategoryCreateDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "ProductItemListDto.cs",
+              "DocumentMoniker": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Apps\\AdminApp\\Dtos\\ProductDto\\ProductItemListDto.cs",
+              "RelativeDocumentMoniker": "Apps\\AdminApp\\Dtos\\ProductDto\\ProductItemListDto.cs",
+              "ToolTip": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Apps\\AdminApp\\Dtos\\ProductDto\\ProductItemListDto.cs",
+              "RelativeToolTip": "Apps\\AdminApp\\Dtos\\ProductDto\\ProductItemListDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T13:55:33.432Z",
+              "WhenOpened": "2024-09-03T11:13:37.297Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "CategoryReturnDto.cs",
               "DocumentMoniker": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Apps\\AdminApp\\Dtos\\CategoryDto\\CategoryReturnDto.cs",
               "RelativeDocumentMoniker": "Apps\\AdminApp\\Dtos\\CategoryDto\\CategoryReturnDto.cs",
               "ToolTip": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Apps\\AdminApp\\Dtos\\CategoryDto\\CategoryReturnDto.cs",
               "RelativeToolTip": "Apps\\AdminApp\\Dtos\\CategoryDto\\CategoryReturnDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAXAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T09:34:08.003Z",
+              "WhenOpened": "2024-09-03T10:37:02.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductReturnDto.cs",
+              "DocumentMoniker": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Apps\\AdminApp\\Dtos\\ProductDto\\ProductReturnDto.cs",
+              "RelativeDocumentMoniker": "Apps\\AdminApp\\Dtos\\ProductDto\\ProductReturnDto.cs",
+              "ToolTip": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Apps\\AdminApp\\Dtos\\ProductDto\\ProductReturnDto.cs",
+              "RelativeToolTip": "Apps\\AdminApp\\Dtos\\ProductDto\\ProductReturnDto.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAwAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T10:18:50.155Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Apps\\AdminApp\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Apps\\AdminApp\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Apps\\AdminApp\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Apps\\AdminApp\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAADwvyAAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T10:09:38.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T08:22:28.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Profiles\\MapperProfile.cs",
+              "RelativeDocumentMoniker": "Profiles\\MapperProfile.cs",
+              "ToolTip": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Profiles\\MapperProfile.cs",
+              "RelativeToolTip": "Profiles\\MapperProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T08:20:35.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Apps\\AdminApp\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "Apps\\AdminApp\\Controllers\\CategoryController.cs",
               "ToolTip": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Apps\\AdminApp\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "Apps\\AdminApp\\Controllers\\CategoryController.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAIwC4AAAA2AAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAABsAAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T09:28:31.986Z",
+              "WhenOpened": "2024-09-03T07:02:25.817Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

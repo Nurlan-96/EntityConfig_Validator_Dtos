@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ShopAppAPI.Apps.AdminApp.Dtos.CategoryDto;
@@ -12,25 +13,21 @@ namespace ShopAppAPI.Apps.AdminApp.Controllers
     public class CategoryController : ControllerBase
     {
         private readonly ShopAppContext _shopAppContext;
+        private readonly IMapper _mapper;
 
-        public CategoryController(ShopAppContext shopAppContext)
+        public CategoryController(ShopAppContext shopAppContext, IMapper mapper)
         {
             _shopAppContext = shopAppContext;
+            _mapper = mapper;
         }
 
         [HttpGet]
         public async Task<IActionResult> Get(int id)
         {
             if (id == null) return BadRequest();
-            var existCategory= await _shopAppContext.Categories.Where(c=>!c.IsDeleted).FirstOrDefaultAsync(c=>c.Id==id);
+            var existCategory= await _shopAppContext.Categories.Include(c=>c.Products).Where(c=>!c.IsDeleted).FirstOrDefaultAsync(c=>c.Id==id);
             if (existCategory == null) return NotFound();
-            CategoryReturnDto crDto = new();
-            crDto.Id = existCategory.Id;
-            crDto.Name = existCategory.Name;
-            crDto.CreatedDate = existCategory.CreatedDate;
-            crDto.UpdateDate= existCategory.UpdatedDate;
-            crDto.ImageUrl = "http://localhost:51012/images" + existCategory.Image;
-            return Ok(crDto);
+            return Ok(_mapper.Map<CategoryReturnDto>(existCategory));
         }
         [HttpPost]
         public async Task<IActionResult> Create(CategoryCreateDto ccDto)
@@ -39,7 +36,7 @@ namespace ShopAppAPI.Apps.AdminApp.Controllers
             if (exists) return StatusCode(409);
             Category category = new();
             if (ccDto.Photo is null) return BadRequest();
-            if (!ccDto.Photo.ContentType.Contains("images/")) return BadRequest();
+            if (!ccDto.Photo.ContentType.Contains("image/")) return BadRequest();
             if (ccDto.Photo.Length/1024 > 1000) return BadRequest();
             string fileName = Guid.NewGuid().ToString()+Path.GetExtension(ccDto.Photo.FileName);
             string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", fileName);

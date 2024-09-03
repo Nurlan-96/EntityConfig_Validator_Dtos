@@ -1,6 +1,14 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\wwwroot\\images\\1b26102c-9b95-4b7d-a23b-685f54d59760.webp",
+      "PackagePath": "staticwebassets\\images\\1b26102c-9b95-4b7d-a23b-685f54d59760.webp"
+    },
+    {
+      "Id": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\wwwroot\\images\\gym.webp",
+      "PackagePath": "staticwebassets\\images\\gym.webp"
+    },
+    {
       "Id": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\wwwroot\\images\\phone.jpg",
       "PackagePath": "staticwebassets\\images\\phone.jpg"
     },

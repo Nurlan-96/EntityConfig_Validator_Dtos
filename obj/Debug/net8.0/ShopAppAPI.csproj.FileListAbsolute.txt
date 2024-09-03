@@ -138,3 +138,5 @@ C:\Users\Uncle Nurlan\Desktop\ShopAppAPI\bin\Debug\net8.0\ShopAppAPI.staticwebas
 C:\Users\Uncle Nurlan\Desktop\ShopAppAPI\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\Uncle Nurlan\Desktop\ShopAppAPI\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 C:\Users\Uncle Nurlan\Desktop\ShopAppAPI\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Uncle Nurlan\Desktop\ShopAppAPI\obj\Debug\net8.0\ShopAppAPI.sourcelink.json
+C:\Users\Uncle Nurlan\Desktop\ShopAppAPI\bin\Debug\net8.0\AutoMapper.dll

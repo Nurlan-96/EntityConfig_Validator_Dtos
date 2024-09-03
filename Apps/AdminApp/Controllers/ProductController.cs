@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ShopAppAPI.Apps.AdminApp.Dtos.ProductDto;
@@ -12,10 +13,12 @@ namespace ShopAppAPI.Apps.AdminApp.Controllers
     public class ProductController : ControllerBase
     {
         private readonly ShopAppContext _shopAppContext;
+        private readonly IMapper _mapper;
 
-        public ProductController(ShopAppContext shopAppContext)
+        public ProductController(ShopAppContext shopAppContext, IMapper mapper)
         {
             _shopAppContext = shopAppContext;
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -50,15 +53,8 @@ namespace ShopAppAPI.Apps.AdminApp.Controllers
                 .Where(p=>!p.IsDeleted)
                 .FirstOrDefaultAsync(x => x.Id == id);
             if (existProduct == null) return NotFound();
-            ProductReturnDto prDto = new ();
-            prDto.Name = existProduct.Name;
-            prDto.SalePrice = existProduct.SalePrice;
-            prDto.CostPrice = existProduct.CostPrice;
-            prDto.Id = existProduct.Id;
-            prDto.CreatedDate = existProduct.CreatedDate;
-            prDto.UpdatedDate = existProduct.UpdatedDate;
-            prDto.CategoryName = existProduct.Category.Name;
-            return Ok(prDto);
+
+            return Ok(_mapper.Map<ProductReturnDto>(existProduct));
         }
         [HttpPost]
         public async Task<IActionResult> Create(ProductCreateDto pcd)

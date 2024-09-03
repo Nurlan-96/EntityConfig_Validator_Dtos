@@ -7,5 +7,6 @@
         public DateOnly CreatedDate { get; set; }
         public DateOnly UpdateDate { get; set; }
         public string ImageUrl { get; set; }
+        public int ProductsCount { get; set; }
     }
 }
