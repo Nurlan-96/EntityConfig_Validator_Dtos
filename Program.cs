@@ -1,8 +1,13 @@
 using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using ShopAppAPI.Apps.AdminApp.Validators.ProductValidators;
 using ShopAppAPI.Data;
+using ShopAppAPI.Entities;
 using ShopAppAPI.Profiles;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 var config=builder.Configuration;
@@ -18,10 +23,33 @@ builder.Services.AddDbContext<ShopAppContext>(options =>
 });
 builder.Services.AddAutoMapper(opt =>
 {
-    opt.AddProfile(new MapperProfile());
+    opt.AddProfile(new MapperProfile(new HttpContextAccessor()));
 });
-var app = builder.Build();
+//builder.Services.AddAutoMapper(typeof(MapperProfile).Assembly);
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
+{
+    options.Password.RequireNonAlphanumeric = true;
+}).AddEntityFrameworkStores<ShopAppContext>().AddDefaultTokenProviders();
+builder.Services.AddAuthentication(x =>
+{
+    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(x =>
+{
+    x.TokenValidationParameters = new TokenValidationParameters
+    {        
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config.GetSection("Jwt:SecretKey").Value)),
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = config["Jwt:Issuer"],
+        ValidAudience = config["Jwt:Audience"],
+    };
+});
 
+var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

@@ -6,10 +6,18 @@ namespace ShopAppAPI.Profiles
 {
     public class MapperProfile:Profile
     {
-        public MapperProfile()
+        private readonly IHttpContextAccessor _contextAccessor;
+
+        public MapperProfile(IHttpContextAccessor contextAccessor)
         {
+            _contextAccessor = contextAccessor;
+            var urlBuilder = new UriBuilder(_contextAccessor.HttpContext.Request.Scheme,
+                _contextAccessor.HttpContext.Request.Host.Host,
+                _contextAccessor.HttpContext.Request.Host.Port.Value);
+             var url = urlBuilder.Uri.AbsoluteUri;
+             
             CreateMap<Category, CategoryReturnDto>()
-                .ForMember(dest => dest.ImageUrl, map => map.MapFrom(src => "http://localhost:51012/images" + src.Image));
+                .ForMember(dest => dest.ImageUrl, map => map.MapFrom(src => url+"images/" + src.Image));
                 //.ForMember(dest=>dest.ProductCount, map=>map.MapFrom(src=>src.Products.Count)).ReverseMap();
             CreateMap<Product, ProductReturnDto>();
             CreateMap<Category, CategoryInProductReturnDto>();

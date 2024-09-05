@@ -1,10 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using ShopAppAPI.Entities;
 using System.Reflection;
 
 namespace ShopAppAPI.Data
 {
-    public class ShopAppContext:DbContext
+    public class ShopAppContext:IdentityDbContext<AppUser>
     {
         public ShopAppContext(DbContextOptions options) : base(options)
         {

@@ -140,3 +140,10 @@ C:\Users\Uncle Nurlan\Desktop\ShopAppAPI\bin\Debug\net8.0\FluentValidation.AspNe
 C:\Users\Uncle Nurlan\Desktop\ShopAppAPI\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\Uncle Nurlan\Desktop\ShopAppAPI\obj\Debug\net8.0\ShopAppAPI.sourcelink.json
 C:\Users\Uncle Nurlan\Desktop\ShopAppAPI\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\Uncle Nurlan\Desktop\ShopAppAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Uncle Nurlan\Desktop\ShopAppAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Uncle Nurlan\Desktop\ShopAppAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Uncle Nurlan\Desktop\ShopAppAPI\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Uncle Nurlan\Desktop\ShopAppAPI\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Uncle Nurlan\Desktop\ShopAppAPI\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Uncle Nurlan\Desktop\ShopAppAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
