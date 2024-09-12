@@ -7,12 +7,15 @@ using ShopAppAPI.Apps.AdminApp.Validators.ProductValidators;
 using ShopAppAPI.Data;
 using ShopAppAPI.Entities;
 using ShopAppAPI.Profiles;
+using ShopAppAPI.Services.Implementations;
+using ShopAppAPI.Services.Interfaces;
+using ShopAppAPI.Settings;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 var config=builder.Configuration;
 // Add services to the container.
-
+builder.Services.AddMvc();
 builder.Services.AddControllers().AddFluentValidation(config => config.RegisterValidatorsFromAssemblyContaining<ProductCreateDtoValidator>());
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -26,7 +29,9 @@ builder.Services.AddAutoMapper(opt =>
     opt.AddProfile(new MapperProfile(new HttpContextAccessor()));
 });
 //builder.Services.AddAutoMapper(typeof(MapperProfile).Assembly);
+builder.Services.Configure<JwtSettings>(config.GetSection("Jwt"));
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
 {
     options.Password.RequireNonAlphanumeric = true;
@@ -46,6 +51,7 @@ builder.Services.AddAuthentication(x =>
         ValidateIssuerSigningKey = true,
         ValidIssuer = config["Jwt:Issuer"],
         ValidAudience = config["Jwt:Audience"],
+        ClockSkew=TimeSpan.Zero,
     };
 });
 

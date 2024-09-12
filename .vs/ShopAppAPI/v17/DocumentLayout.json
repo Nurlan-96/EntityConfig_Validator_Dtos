@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\obj\\Debug\\net8.0\\ShopAppAPI.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:obj\\Debug\\net8.0\\ShopAppAPI.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|c:\\users\\uncle nurlan\\desktop\\shopappapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|c:\\users\\uncle nurlan\\desktop\\shopappapi\\apps\\adminapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|solutionrelative:apps\\adminapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|c:\\users\\uncle nurlan\\desktop\\shopappapi\\settings\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|solutionrelative:settings\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|c:\\users\\uncle nurlan\\desktop\\shopappapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|c:\\users\\uncle nurlan\\desktop\\shopappapi\\shopapp.mvc\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|solutionrelative:shopapp.mvc\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|c:\\users\\uncle nurlan\\desktop\\shopappapi\\shopapp.mvc\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7B59110-D7E4-4335-AC26-D0F33E5E3E0F}|ShopAppAPI.csproj|solutionrelative:shopapp.mvc\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,42 +38,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-04T09:24:59.696Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAUwC8AAAAvAAAA",
+              "Title": "ShopAppAPI.AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\obj\\Debug\\net8.0\\ShopAppAPI.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "obj\\Debug\\net8.0\\ShopAppAPI.AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\obj\\Debug\\net8.0\\ShopAppAPI.AssemblyInfo.cs",
+              "RelativeToolTip": "obj\\Debug\\net8.0\\ShopAppAPI.AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T19:54:06.143Z",
+              "WhenOpened": "2024-09-12T08:58:43.962Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Apps\\AdminApp\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Apps\\AdminApp\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Apps\\AdminApp\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Apps\\AdminApp\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAAACkAAAARAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T19:10:06.33Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-11T19:20:31.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JwtSettings.cs",
+              "DocumentMoniker": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Settings\\JwtSettings.cs",
+              "RelativeDocumentMoniker": "Settings\\JwtSettings.cs",
+              "ToolTip": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\Settings\\JwtSettings.cs",
+              "RelativeToolTip": "Settings\\JwtSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T19:00:29.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\ShopApp.MVC\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "ShopApp.MVC\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\ShopApp.MVC\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "ShopApp.MVC\\Views\\Product\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T18:54:39.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\ShopApp.MVC\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "ShopApp.MVC\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Uncle Nurlan\\Desktop\\ShopAppAPI\\ShopApp.MVC\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "ShopApp.MVC\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T18:53:04.913Z"
             }
           ]
         }

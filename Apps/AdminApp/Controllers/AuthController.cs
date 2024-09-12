@@ -1,8 +1,13 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using ShopAppAPI.Apps.AdminApp.Dtos.UserDto;
 using ShopAppAPI.Entities;
+using ShopAppAPI.Services.Interfaces;
+using ShopAppAPI.Settings;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -16,11 +21,17 @@ namespace ShopAppAPI.Apps.AdminApp.Controllers
         private readonly UserManager<AppUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IConfiguration _configuration;
-        public AuthController(UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration)
+        private readonly IMapper _mapper;
+        private readonly ITokenService _tokenService;
+        private readonly JwtSettings _jwtSettings;
+        public AuthController(IOptions<JwtSettings> jwtSettings,UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration, IMapper mapper, ITokenService tokenService)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _configuration = configuration;
+            _mapper = mapper;
+            _tokenService = tokenService;
+            _jwtSettings=jwtSettings.Value;
         }
 
         [HttpPost("register")]
@@ -66,33 +77,20 @@ namespace ShopAppAPI.Apps.AdminApp.Controllers
             if (user == null) return BadRequest();
             var result = await _userManager.CheckPasswordAsync(user, lDto.Password);
             if (!result) return BadRequest();
-            var handler = new JwtSecurityTokenHandler();
-            var privateKey = Encoding.UTF8.GetBytes(_configuration["Jwt:SecretKey"]);
-            var credentials = new SigningCredentials(
-              new SymmetricSecurityKey(privateKey),
-              SecurityAlgorithms.HmacSha256);
+            var roles=await _userManager.GetRolesAsync(user);
+            var audience = _jwtSettings.Audience;
+            var issuer = _jwtSettings.Issuer;
+            var secretKey = _jwtSettings.SecretKey;
+            return Ok(new {token= _tokenService.GetToken(secretKey, audience, issuer, user, roles) }); 
+        }
 
-            var ci = new ClaimsIdentity();
-
-            ci.AddClaim(new Claim("id", user.Id));
-            ci.AddClaim(new Claim(ClaimTypes.Name, user.UserName));
-            ci.AddClaim(new Claim(ClaimTypes.GivenName, user.FullName));
-            ci.AddClaim(new Claim(ClaimTypes.Email, user.Email));
-            var roles = await _userManager.GetRolesAsync(user);
-            ci.AddClaims(roles.Select(r => new Claim(ClaimTypes.Role, r)).ToList());
-
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                SigningCredentials = credentials,
-                Expires = DateTime.UtcNow.AddHours(1),
-                Subject = ci,
-                Audience=_configuration.GetSection("Jwt:Audience").Value,
-                Issuer=_configuration.GetSection("Jwt:Issuer").Value,
-                NotBefore=DateTime.UtcNow.AddHours(1),
-            };
-            var token = handler.CreateToken(tokenDescriptor);
-           
-            return Ok(new { token = handler.WriteToken(token) });
+        [HttpGet("profile")]
+        [Authorize]
+        public async Task<IActionResult> UserProfile()
+        {
+            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+            if (user == null) return NotFound();
+            return Ok(_mapper.Map<UserGetDto>(user));
         }
     }
 }
